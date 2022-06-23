@@ -18,7 +18,9 @@ class MainActivity : AppCompatActivity() {
         findWV.loadUrl("https://controlpatri.urbanovitalino.adv.br/")
 
         val webSett = findWV.settings
-
+        webSett.javaScriptEnabled = true
+        webSett.domStorageEnabled = true // storage data for optimization
+        findWV.webViewClient = WebViewClient()
 
         // key steps
         findWV.canGoBack()
