@@ -15,11 +15,10 @@ class MainActivity : AppCompatActivity() {
 
         // find your website
         val findWV = findViewById<View>(R.id.WebView) as WebView
-        findWV.loadUrl("https://www.urbanovitalino.com.br/")
+        findWV.loadUrl("https://controlpatri.urbanovitalino.adv.br/")
 
         val webSett = findWV.settings
-        webSett.javaScriptEnabled = true
-        findWV.webViewClient = WebViewClient()
+
 
         // key steps
         findWV.canGoBack()
